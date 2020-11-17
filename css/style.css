@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
     font-family: Raleway, sans-serif;
 }
@@ -15,24 +16,59 @@ body {
 }
 
 #basepage {
-    display: inline;
-    position: relative;
+    display: block;
+    position: absolute;
+    /* background-image: url("/img/dummy_page.jpg");
+    background-size: cover ; */
     width: 100vw;
+    height: 100vh;
 }
 
 #basepage img {
-    display: inline;
+    display: inline-block;
     position: absolute;
     width: 100vw;
 }
 
-#init-button {
-    display: block;
+/* .sticky {
+    position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 100px;
     left: 100px;
-    width: 200px;
-    height: 2rem;
+    /* background-color: chocolate;
+    color: white;
+    border: 1px solid rgb(46, 23, 7);
+    border-radius: 5px;
+} */
+
+.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    /* background-color: chocolate;
+    color: white;
+    border: 1px solid rgb(46, 23, 7);
+    border-radius: 5px; */
+}
+
+.absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* background-color: chocolate;
+    color: white;
+    border: 1px solid rgb(46, 23, 7);
+    border-radius: 5px; */
+}
+
+#init-button {
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    left: 100px; */
+    /* width: 200px;
+    height: 2rem; */
+    padding: .5rem;
     background-color: chocolate;
     color: white;
     border: 1px solid rgb(46, 23, 7);

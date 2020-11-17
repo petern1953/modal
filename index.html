@@ -28,40 +28,50 @@ Amikor a modal megnyílik, a hátteret egy részben áttetsző réteggel le kell
 A modal egy egyszerű animáció kíséretében tűnjön el bezáráskor.
 A modalon kívülre kattintva is automatikusan záródjon be a modal, 
 tűnjön el az overlay réteg. -->
-</body>
-<div id="basepage">
-    <img src="img/dummy_page.jpg" alt="Host page for modal">
-    <button id="init-button">Show modal</button>
-</div>
-<div class="modal__container modal__container--hidden">
-    <div class="modal">
-        <header class="modal__header">
-            <button class="button--close" onclick="closeModal()"><i class="fa fa-times"></i></button>
-        </header>
-        <section class="wrapper">
-            <article class="article">
-                <header>
-                    <h3 class="article__title">CSSScript.com</h3>
-                </header>
-                <p class="article__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur itaque ipsum nemo
-                    eaque in voluptatibus libero sed temporibus ratione! Officia eveniet possimus quis consequuntur illo
-                    ab obcaecati earum porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                    architecto itaque iste, sapiente,
-                    asperiores veniam ad quae cum, recusandae ut inventore animi quaerat. Deserunt doloremque optio
-                    consequatur sint cupiditate delectus. Vel delectus id vitae, ea nemo libero praesentium cupiditate
-                    iste iusto, sequi perferendis et
-                    quaerat nesciunt voluptas omnis deleniti earum soluta placeat magni officiis ipsum. Nobis asperiores
-                    eius veritatis dignissimos?
-
-                </p>
-            </article>
-        </section>
-        <footer class="modal__footer">
-            <button class="button--ok">Okay</button>
-            <button class="button--cancel">Cancel</button>
-        </footer>
+    <div id="basepage">
+        <div class="absolute">
+            <img class="absolute" src="/img/dummy_page.jpg" alt="Host page for modal">
+            <!-- <div class="sticky"> -->
+            <!-- <div class="fixed"> -->
+        </div>
+        <div class="fixed">
+            <button id="init-button">Show modal</button>
+        </div>
     </div>
-</div>
+
+    <div class="modal__container modal__container--hidden">
+        <div class="modal">
+            <header class="modal__header">
+                <button class="button--close" onclick="closeModal()"><i class="fa fa-times"></i></button>
+            </header>
+            <section class="wrapper">
+                <article class="article">
+                    <header>
+                        <h3 class="article__title">CSSScript.com</h3>
+                    </header>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur itaque ipsum nemo
+                        eaque in voluptatibus libero sed temporibus ratione! Officia eveniet possimus quis consequuntur
+                        illo
+                        ab obcaecati earum porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        architecto itaque iste, sapiente,
+                        asperiores veniam ad quae cum, recusandae ut inventore animi quaerat. Deserunt doloremque optio
+                        consequatur sint cupiditate delectus. Vel delectus id vitae, ea nemo libero praesentium
+                        cupiditate
+                        iste iusto, sequi perferendis et
+                        quaerat nesciunt voluptas omnis deleniti earum soluta placeat magni officiis ipsum. Nobis
+                        asperiores
+                        eius veritatis dignissimos?
+
+                    </p>
+                </article>
+            </section>
+            <footer class="modal__footer">
+                <button class="button--ok">Okay</button>
+                <button class="button--cancel">Cancel</button>
+            </footer>
+        </div>
+    </div>
+</body>
 
 </html>

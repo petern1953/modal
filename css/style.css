@@ -14,12 +14,49 @@ body {
     box-sizing: border-box;
 }
 
+#basepage {
+    display: inline;
+    position: relative;
+    width: 100vw;
+}
+
+#basepage img {
+    display: inline;
+    position: absolute;
+    width: 100vw;
+}
+
+#init-button {
+    display: block;
+    position: sticky;
+    top: 0px;
+    left: 100px;
+    width: 200px;
+    height: 2rem;
+    background-color: chocolate;
+    color: white;
+    border: 1px solid rgb(46, 23, 7);
+    border-radius: 5px;
+}
+
 .modal__container {
     display: flex;
+    position: fixed;
     padding: auto;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0,.2);
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal__container.modal__container--hidden {
+    display: none;
+    padding: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0);
+
 }
 
 .modal {

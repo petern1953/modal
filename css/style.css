@@ -98,10 +98,10 @@ body {
     text-align: right;
 }
 
-.closer {
+/* .closer {
     visibility: hidden;
     font-size: 1.8rem;
-}
+} */
 .fa-times {
     visibility: visible;
 }

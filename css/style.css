@@ -63,8 +63,14 @@ body {
 /* } */
 
 .modal__container--hidden {
-    display: none;
-    background-color: rgba(0, 0, 0, 0);
+    /* display: none; */
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -1600px;
+
+    /* background-color: rgba(0, 0, 0, 0); */
+    transition: left .7s;
 }
 
 .modal__container--visible {
@@ -73,7 +79,11 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .7);
+    animation: runIn .3s;
+}
 
+@keyframes runIn {
+  0% {left: -200px;}
 }
 
 #modal {
@@ -82,6 +92,7 @@ body {
     padding: 0;
     background-color: rgb(175, 250, 227);
 }
+
 @media screen and (min-width: 560px) {
 #modal {
     width: 50%;
@@ -90,6 +101,7 @@ body {
     background-color: rgb(175, 250, 227);
     }
 }
+
 #modal__header {
     display: block;
     margin: 0;
@@ -98,32 +110,42 @@ body {
     text-align: right;
 }
 
-/* .closer {
+.closer {
     visibility: hidden;
     font-size: 1.8rem;
-} */
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .fa-times {
     visibility: visible;
 }
+
 .article {
     margin: 0 3rem;
 }
+
 .article__title {
     font-size: 2rem;
     margin: 1rem 0;
 }
+
 .article__text {
     line-height: 2rem;
-
 }
+
 .modal__footer {
     float: right;
     padding: 1rem 3rem 2.5rem;
 }
+
 .button--ok {
     background-color: rgb(23, 136, 12);
     color: rgb(255, 255, 255);
 }
+
 .button--cancel {
     background-color: rgb(190, 15, 15);
     color: rgb(255, 255, 255);

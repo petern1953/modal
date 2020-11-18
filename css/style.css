@@ -42,7 +42,7 @@ body {
     border-radius: 5px;
 }
 
-#modal__container {
+#modal__container, #hider {
     display: flex;
     position: fixed;
     padding: auto;
@@ -56,7 +56,20 @@ body {
     transition: left .7s;
 }
 
+#hider--hidden {
+    top: 0;
+    left: -1600px;
+    transition: left .7s;
+}
+
 .modal__container--visible {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    transition: left .3s;
+}
+
+.hider--visible {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .7);

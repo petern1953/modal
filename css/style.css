@@ -17,7 +17,7 @@ body {
 
 #basepage {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     /* background-image: url("/img/dummy_page.jpg");
     background-size: cover ; */
     width: 100vw;
@@ -62,13 +62,9 @@ body {
 }
 
 #init-button {
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: 100px;
-    left: 100px; */
-    /* width: 200px;
-    height: 2rem; */
-    padding: .5rem;
+    /* width: 200px; */
+    height: 2rem;
+    padding: .4rem 2rem 1.5rem;
     background-color: chocolate;
     color: white;
     border: 1px solid rgb(46, 23, 7);

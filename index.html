@@ -28,16 +28,17 @@ Amikor a modal megnyílik, a hátteret egy részben áttetsző réteggel le kell
 A modal egy egyszerű animáció kíséretében tűnjön el bezáráskor.
 A modalon kívülre kattintva is automatikusan záródjon be a modal, 
 tűnjön el az overlay réteg. -->
-    <div id="basepage">
-        <div class="absolute">
-            <img class="absolute" src="/img/dummy_page.jpg" alt="Host page for modal">
-            <!-- <div class="sticky"> -->
-            <!-- <div class="fixed"> -->
-        </div>
-        <div class="fixed">
-            <button id="init-button">Show modal</button>
-        </div>
+    <div id="basepage" class="relative">
+        <!-- <div class="relative"> -->
+        <img class="absolute" src="/img/dummy_page.jpg" alt="Host page for modal">
+        <!-- <div class="sticky"> -->
+        <!-- <div class="fixed"> -->
+        <button id="init-button" class="fixed">Show modal</button>
     </div>
+    <!-- <div class="absolute"> -->
+    <!-- <div class="fixed"> -->
+    <!-- </div> -->
+    <!-- </div> -->
 
     <div class="modal__container modal__container--hidden">
         <div class="modal">

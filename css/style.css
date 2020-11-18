@@ -60,11 +60,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .7);
-    animation: runIn .3s;
-}
-
-@keyframes runIn {
-  0% {left: -200px;}
+    transition: left .3s;
 }
 
 #modal {

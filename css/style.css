@@ -42,7 +42,8 @@ body {
     border-radius: 5px;
 }
 
-#modal__container, #hider {
+/* #modal__container,  */
+#hider {
     display: flex;
     position: fixed;
     padding: auto;
@@ -50,11 +51,11 @@ body {
     height: 100vh;
 }
 
-.modal__container--hidden {
+/* .modal__container--hidden {
     top: 0;
     left: -1600px;
     transition: left .7s;
-}
+} */
 
 #hider--hidden {
     top: 0;
@@ -62,12 +63,12 @@ body {
     transition: left .7s;
 }
 
-.modal__container--visible {
+/* .modal__container--visible {
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: transparent;
     transition: left .3s;
-}
+} */
 
 .hider--visible {
     top: 0;

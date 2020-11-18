@@ -32,39 +32,39 @@ tűnjön el az overlay réteg. -->
         <img src="/img/dummy_page.jpg" alt="Host page for modal">
         <button id="init-button">Show modal</button>
     </div>
-    <div id="hider" class="hider--hidden"></div>
-    <div id="modal__container" class="modal__container--hidden">
-        <div id="modal">
-            <header id="modal__header">
-                <button class="closer" onclick="hideModal()"><i class="fa fa-times pointer"></i></button>
-            </header>
-            <section>
-                <article class="article">
-                    <header>
-                        <h3 class="article__title">CSSScript.com</h3>
-                    </header>
-                    <p class="article__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur itaque ipsum nemo
-                        eaque in voluptatibus libero sed temporibus ratione! Officia eveniet possimus quis consequuntur
-                        illo
-                        ab obcaecati earum porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                        architecto itaque iste, sapiente,
-                        asperiores veniam ad quae cum, recusandae ut inventore animi quaerat. Deserunt doloremque optio
-                        consequatur sint cupiditate delectus. Vel delectus id vitae, ea nemo libero praesentium
-                        cupiditate
-                        iste iusto, sequi perferendis et
-                        quaerat nesciunt voluptas omnis deleniti earum soluta placeat magni officiis ipsum. Nobis
-                        asperiores
-                        eius veritatis dignissimos?
+    <div id="hider" class="hider--hidden" onclick="hideModal()"></div>
+    <!-- <div id="modal__container" class="modal__container--hidden"> -->
+    <div id="modal">
+        <header id="modal__header">
+            <button class="closer" onclick="hideModal()"><i class="fa fa-times pointer"></i></button>
+        </header>
+        <section>
+            <article class="article">
+                <header>
+                    <h3 class="article__title">CSSScript.com</h3>
+                </header>
+                <p class="article__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur itaque ipsum nemo
+                    eaque in voluptatibus libero sed temporibus ratione! Officia eveniet possimus quis consequuntur
+                    illo
+                    ab obcaecati earum porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                    architecto itaque iste, sapiente,
+                    asperiores veniam ad quae cum, recusandae ut inventore animi quaerat. Deserunt doloremque optio
+                    consequatur sint cupiditate delectus. Vel delectus id vitae, ea nemo libero praesentium
+                    cupiditate
+                    iste iusto, sequi perferendis et
+                    quaerat nesciunt voluptas omnis deleniti earum soluta placeat magni officiis ipsum. Nobis
+                    asperiores
+                    eius veritatis dignissimos?
 
-                    </p>
-                </article>
-            </section>
-            <footer class="modal__footer">
-                <button class="button--ok pointer" onclick="hideModal()">Okay</button>
-                <button class="button--cancel pointer" onclick="hideModal()">Cancel</button>
-            </footer>
-        </div>
+                </p>
+            </article>
+        </section>
+        <footer class="modal__footer">
+            <button class="button--ok pointer" onclick="hideModal()">Okay</button>
+            <button class="button--cancel pointer" onclick="hideModal()">Cancel</button>
+        </footer>
+        <!-- </div> -->
     </div>
     <script src="./js/main.js"></script>
 </body>

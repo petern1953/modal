@@ -42,7 +42,7 @@ body {
     border-radius: 5px;
 }
 
-.modal__container {
+#modal__container {
     /* display: flex; */
     /* position: fixed; */
     padding: auto;
@@ -76,21 +76,21 @@ body {
 
 }
 
-.modal {
+#modal {
     width: 100%;
     margin: auto;
     padding: 0;
     background-color: rgb(175, 250, 227);
 }
 @media screen and (min-width: 560px) {
-.modal {
+#modal {
     width: 50%;
     margin: auto;
     padding: 0;
     background-color: rgb(175, 250, 227);
     }
 }
-.modal__header {
+#modal__header {
     display: block;
     margin: 0;
     padding: 0;
@@ -98,15 +98,12 @@ body {
     text-align: right;
 }
 
-.button--close {
+.closer {
     visibility: hidden;
     font-size: 1.8rem;
 }
 .fa-times {
     visibility: visible;
-}
-.wrapper {
-    
 }
 .article {
     margin: 0 3rem;

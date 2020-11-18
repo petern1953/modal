@@ -33,12 +33,12 @@ tűnjön el az overlay réteg. -->
         <button id="init-button">Show modal</button>
     </div>
 
-    <div class="modal__container modal__container--hidden">
-        <div class="modal">
-            <header class="modal__header">
-                <button class="button--close" onclick="closeModal()"><i class="fa fa-times"></i></button>
+    <div id="modal__container" class="modal__container--hidden" onclick="hideModal()">
+        <div id="modal">
+            <header id="modal__header">
+                <button class="closer" onclick="hideModal()"><i class="fa fa-times"></i></button>
             </header>
-            <section class="wrapper">
+            <section>
                 <article class="article">
                     <header>
                         <h3 class="article__title">CSSScript.com</h3>
@@ -61,11 +61,12 @@ tűnjön el az overlay réteg. -->
                 </article>
             </section>
             <footer class="modal__footer">
-                <button class="button--ok">Okay</button>
-                <button class="button--cancel">Cancel</button>
+                <button class="button--ok closer" onclick="hideModal()">Okay</button>
+                <button class="button--cancel closer" onclick="hideModal()">Cancel</button>
             </footer>
         </div>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

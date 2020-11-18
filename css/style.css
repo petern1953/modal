@@ -54,7 +54,6 @@ body {
     align-items: center;
     position: absolute;
     padding: auto;
-    /* margin: auto; */
     width: 100vw;
     height: 100vh;
 }
@@ -88,7 +87,6 @@ body {
 #modal {
     position: fixed;
     width: 100%;
-    /* margin: auto; */
     padding: 0;
     background-color: rgb(175, 250, 227);
 }

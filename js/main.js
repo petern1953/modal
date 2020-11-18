@@ -1,12 +1,12 @@
-let modalContainer = document.querySelector('#modal__container');
+let hider = document.querySelector('#hider');
 let initBtn = document.querySelector('#init-button');
 
 initBtn.addEventListener('click', showModal);
 
 function showModal() {
-    modalContainer.setAttribute('class', 'modal__container--visible')
+    modalContainer.setAttribute('class', 'hider--visible')
 }
 
 function hideModal() {
-    modalContainer.setAttribute('class', 'modal__container--hidden')
+    modalContainer.setAttribute('class', 'hider--hidden')
 }

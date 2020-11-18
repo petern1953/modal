@@ -43,39 +43,20 @@ body {
 }
 
 #modal__container {
-    /* display: flex; */
-    /* position: fixed; */
+    display: flex;
+    position: fixed;
     padding: auto;
     width: 100vw;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .7); */
 }
 
-/* .modal__container.modal__container--hidden { */
-    /* display: none; */
-    /* padding: auto;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* background-color: rgba(0, 0, 0,0); */
-
-/* } */
-
 .modal__container--hidden {
-    /* display: none; */
-    display: flex;
-    position: fixed;
     top: 0;
     left: -1600px;
-
-    /* background-color: rgba(0, 0, 0, 0); */
     transition: left .7s;
 }
 
 .modal__container--visible {
-    display: flex;
-    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .7);

@@ -3,13 +3,14 @@ const modalContainer = document.querySelector('#modal__container');
 const hider = document.querySelector('#hider');
 const initBtn = document.querySelector('#init-button');
 const modal = document.querySelector('#modal');
+const okModalButton = document.querySelector(".button--ok");
 
 initBtn.addEventListener('click', showModal);
 
 function showModal() {
     modalContainer.setAttribute('class', 'modal__container--visible');
     hider.setAttribute('class', 'hider--visible');
-    modal.focus();
+    okModalButton.focus();
 }
 
 function hideModal() {
